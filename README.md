@@ -34,8 +34,14 @@ Docker-qdevice is a docker image that uses corosync to act as a qdevice for a tw
       - authorized_keys
       - ssh_data
     ```
+    
+3. Install corosync-qdevice on all proxmox nodes for the qdevice setup to work:
+    ```bash
+    apt update
+    apt install corosync-qdevice
+    ```   
 
-3. Configure the Proxmox cluster to use the qdevice:
+4. Configure the Proxmox cluster to use the qdevice:
     ```bash
     pvecm qdevice setup 192.168.30.226
     ```
