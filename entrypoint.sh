@@ -17,9 +17,13 @@ fi
 # Initialize authorized_keys if not already present
 if [ ! -f ~/.ssh/authorized_keys ]; then
   echo "Initializing authorized_keys..."
-  cp ~/authorized_keys.old ~/.ssh/authorized_keys
-  chmod 700 ~/.ssh
-  chmod 600 ~/.ssh/authorized_keys
+  if [ -f ~/authorized_keys.old ]; then
+    cp ~/authorized_keys.old ~/.ssh/authorized_keys
+    chmod 700 ~/.ssh
+    chmod 600 ~/.ssh/authorized_keys
+  else
+    echo "⚠️Warning⚠️: No authorized keys!"
+  fi
 else
   echo "authorized_keys already exists, skipping initialization."
 fi
