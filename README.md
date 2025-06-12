@@ -60,4 +60,4 @@ Contributions are welcome! Please open an issue or submit a pull request for any
 This project was heavily inspired by the work done in [Sysadminfromhell/corosyncdevice](https://github.com/Sysadminfromhell/corosyncdevice). Many ideas and concepts were adapted and built upon to create this solution. A big thank you to the original authors for their contributions to the community!
 
 ## Disclaimer
-This project is not officially affiliated with Proxmox and Docker. Use it at your own risk.
+This project is not officially affiliated with Proxmox and/or Docker. Use it at your own risk.
