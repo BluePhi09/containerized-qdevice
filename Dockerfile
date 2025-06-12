@@ -3,9 +3,9 @@ FROM debian:bookworm-slim
 LABEL maintaner="BluePhi09 <admin@bluephi09.me>"
 
 LABEL description="Corosync Qdevice Network daemon"
-LABEL documentation="https://github.com/BluePhi09/docker-qdevice"
+LABEL documentation="https://github.com/BluePhi09/containerized-qdevice"
 LABEL version="2.0"
-LABEL website="https://github.com/BluePhi09/docker-qdevice"
+LABEL website="https://github.com/BluePhi09/containerized-qdevice"
 
 RUN apt-get update \
     && apt-get upgrade -qy \

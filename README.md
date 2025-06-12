@@ -1,5 +1,5 @@
-# docker-qdevice
-Docker-qdevice is a docker image that uses corosync to act as a qdevice for a two node proxmox cluster
+# containerized-qdevice
+containerized-qdevice is a docker image that uses corosync to act as a qdevice for a two node proxmox cluster
 
 ## Features
 - Provides a corosync qdevice for two-node Proxmox clusters.
@@ -18,7 +18,7 @@ Docker-qdevice is a docker image that uses corosync to act as a qdevice for a tw
     ```docker compose
     services:
       qdevice:
-        image: ghcr.io/BluePhi09/docker-qdevice
+        image: ghcr.io/BluePhi09/containerized-qdevice
         ports:
           - 22:22
           - 5403:5403
@@ -60,4 +60,4 @@ Contributions are welcome! Please open an issue or submit a pull request for any
 This project was heavily inspired by the work done in [Sysadminfromhell/corosyncdevice](https://github.com/Sysadminfromhell/corosyncdevice). Many ideas and concepts were adapted and built upon to create this solution. A big thank you to the original authors for their contributions to the community!
 
 ## Disclaimer
-This project is not officially affiliated with Proxmox. Use it at your own risk.
+This project is not officially affiliated with Proxmox and Docker. Use it at your own risk.
